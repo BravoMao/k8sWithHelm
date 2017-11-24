@@ -1,0 +1,17 @@
+# Default values for mychart.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+replicaCount: 1
+image:
+  repository: springio/gs-spring-boot-docker
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  internalPort: 9200
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
